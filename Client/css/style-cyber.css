@@ -1,0 +1,17 @@
+#container1,#container2,#container3 {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.header,#banner,#one,#two,#three{
+	height:100vh;
+}
+
+#four,#footer{
+	height:50vh
+}
+
+.technolegies   img{
+	height:5em;
+}

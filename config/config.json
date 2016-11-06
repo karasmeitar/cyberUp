@@ -1,0 +1,7 @@
+{
+	"development":{
+		"password":"root",
+		"username":"root",
+		"database":"angularupcandidates"
+	}
+}
