@@ -9,7 +9,7 @@ models.sequelize
   .authenticate()
   .then(function(err) {
     console.log('Connection has been established successfully.');
-    server.listen(process.env.HQ_PORT || 8080, function () {
+    server.listen(80 || 8080, function () {
     console.log('Express server listening on port ' + server.address().port);
 });
   })
