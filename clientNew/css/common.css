@@ -1,0 +1,208 @@
+@font-face {
+    font-family: Molot;
+    src: url(../assets/fonts/Molot.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(../assets/fonts/NexaLight.otf);
+}
+@font-face {
+    font-family: NexaBold;
+    src: url(../assets/fonts/NexaBold.otf);
+}
+
+
+.cyb-loader{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.cyb-main-title{
+	font-family: Molot;
+	color:  #125dab;
+	font-weight: 400;
+	text-align: center;
+	font-size:5vh;
+}
+
+.cyb-main-title-clickable
+{
+	font-family: Molot;
+	color:  #171a1a !important;
+	font-weight: 400;
+	text-align: center;
+	font-size:4rem;
+	cursor:pointer;
+	font-size: 5vh;
+	text-decoration:none !important;
+	display:block;
+}
+
+.cyb-main-avatar{
+	width: 20vw;
+	height: 40vh;
+	margin-left:69%;
+}
+
+.cyb-logo{
+	display:block;
+	margin:0 auto;
+	width: 30vw;
+	height: 15vh;
+	margin-bottom:5% !important;
+}
+
+
+
+/* Second page */
+
+#cyb-registration-form{
+background-image:url(../assets/images/bg.png);
+ background-size:contain;                      /* <------ */
+ background-repeat:   no-repeat;
+}
+
+.cyb-regvatar{
+	width: 50vw;
+	height: 33vh;
+	margin-left:25%;
+	margin-bottom:10%;
+}
+
+.cyb-registration-form-text{
+font-family: NexaLight;
+color:  #125dab !important;
+font-size: 2rem;
+font-weight: 400;
+text-align: center;
+}
+
+
+.ui-input-text {
+   border: none !important;
+   box-shadow: none !important;
+   background-color:transparent !important;
+   border-bottom: 3px solid #125dab !important;
+	font-family: NexaLight;
+	color:  #125dab !important;
+	font-size: 3vw;
+	font-weight: 400;
+	text-align: center;
+	outline:none;
+	border-bottom-left-radius:0px !important;
+	border-bottom-right-radius:0px !important;
+	margin-left:2% !important;
+	margin-right:2%!important;
+	padding:1vw;
+}
+
+input[type="button"]{
+	background-color:  #125dab;
+	width: 50vw;
+	height: 7vh;
+	font-family: NexaBold;
+	color:  #ffffff;
+	font-size: 4vw;
+	font-weight: 400;
+	text-align: center;
+	margin-top:10% !important;
+	margin-bottom:5% !important;
+}
+
+input.invalid{
+	border: 2px solid red;
+}
+
+input.valid{
+	border: 2px solid green;
+}
+
+.input-error-line{
+	border-bottom-color: red !important;
+}
+
+input[type="text"].input-error-text::-webkit-input-placeholder{
+color:red !important;
+}
+
+input[type="text"].input-error-text:-moz-placeholder{
+color:red !important;
+	
+}
+input[type="text"].input-error-text::-moz-placeholder{
+color:red !important;
+	
+}
+input[type="text"].input-error-text:-ms-input-placeholder {
+color:red !important;
+
+}	
+
+
+#cyb-submit{
+	display:block;
+	margin:0 auto
+}
+
+::-webkit-input-placeholder {
+   color: #125dab;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #125dab;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #125dab;  
+}
+
+:-ms-input-placeholder {  
+   color: #125dab;  
+}
+
+.ui-mobile label ,.error{
+	font-family: NexaLight;
+	color:  red;
+	font-size: 3vw;
+	font-weight: 400;
+	text-align: left;
+	display:none ;
+	margin-left:2%;
+	
+}
+
+/* Third screen*/
+
+.cyb-thank-title{
+font-family: NexaBold;
+color:  #125dab;
+font-size: 7vw;
+font-weight: 400;
+text-align: center;
+transform: scaleX(1.0005);
+display:block;
+margin-bottom:3vh;
+}
+
+.cyb-subtitle{
+font-family: NexaLight;
+color:  #125dab;
+font-size: 6vw;
+font-weight: 400;
+text-align: center;
+transform: scaleX(1.0005);
+display:block;
+margin-bottom:3vw;
+}
+
+.cyb-woman-avatar{
+	width: 46vw;
+	height: 46vh;
+	margin-left:30%;
+}
