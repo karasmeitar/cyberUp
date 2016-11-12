@@ -1,5 +1,10 @@
 var request = require('request');
 var models = require('../models');
+var Sequelize = require("sequelize");
+var env       = process.env.NODE_ENV || "development";
+var path      = require("path");
+var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
+var sequelize = new Sequelize(config.database, config.username, config.password, config);
 var code =5;
 
 exports.AddCandidate = function (req, res) {
@@ -38,5 +43,18 @@ exports.AddCandidate = function (req, res) {
 
 	
 	}
+}
+
+exports.GetCandidate =  function (req, res) {
+    sequelize.query("SELECT * FROM `candidate` order by rand() limit 1", {type: Sequelize.QueryTypes.SELECT})
+        .then(function (user) {
+            if (user) {
+                res.json({
+                    status: 'ok',
+                    message:  user
+                });
+                return;
+            }
+        })
 }
 
