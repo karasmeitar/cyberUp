@@ -2,17 +2,18 @@
 //var debug = require('debug')('my-application');
 var app = require('./../app');
 var models = require('../models');
+var logger = require('./../logger');
 
 
 var server = require('http').createServer(app);
 models.sequelize
   .authenticate()
   .then(function(err) {
-    console.log('Connection has been established successfully.');
+      logger.info('Connection has been established successfully.');
     server.listen(8080 || 8080, function () {
-    console.log('Express server listening on port ' + server.address().port);
+      logger.info('Express server listening on port ' + server.address().port);
 });
   })
   .catch(function (err) {
-    console.log('Unable to connect to the database:', err);
+      logger.error('Unable to connect to the database:', err);
   });

@@ -2,6 +2,7 @@
 	"development":{
 		"password":"root",
 		"username":"root",
-		"database":"angularupcandidates"
+		"database":"angularupcandidates",
+	  	"log_path":"C:\\logs\\"
 	}
 }

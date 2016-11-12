@@ -6,6 +6,7 @@ var path      = require("path");
 var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
 var sequelize = new Sequelize(config.database, config.username, config.password, config);
 var code =5;
+var logger = require('./../logger');
 
 exports.AddCandidate = function (req, res) {
 	if (req.body !== null && req.body.firstName !== null && req.body.lastName !== null && req.body.email !== null)
@@ -18,6 +19,7 @@ exports.AddCandidate = function (req, res) {
                         status: 'error',
                         message: 'We have already this User'
                     });
+                    logger.info('We have already this User'+JSON.stringify(Candidate));
                     return;
                 }
                 else
@@ -33,8 +35,10 @@ exports.AddCandidate = function (req, res) {
                             status: 'ok',
                             message: code
                         });
+                        logger.info('We send'+JSON.stringify(Candidate));
                         return;
                     }).catch(function (err) {
+                        logger.error('We got error in add candidate s',err);
                         console.log(err);
                         callback(500, true);
                     });
@@ -53,6 +57,7 @@ exports.GetCandidate =  function (req, res) {
                     status: 'ok',
                     message:  user
                 });
+                logger.info('The Winner is'+JSON.stringify(user));
                 return;
             }
         })

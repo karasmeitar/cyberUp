@@ -23,6 +23,7 @@
     "node-ffprobe": "^1.2.2",
     "node-salesforce": "^0.8.0",
     "request": "^2.34.0",
-    "sequelize": "^3.2.0"
+    "sequelize": "^3.2.0",
+    "winston":"2.3.0"
   }
 }
