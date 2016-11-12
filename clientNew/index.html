@@ -54,16 +54,47 @@ ga('send', 'pageview');
 
 <!-- Jquery-->
 <script src="js/jquery-2.1.1.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 <!-- Jquery -->
 
-<!-- Bootstrap-->
-<script src="js/bootstrap.min.js"></script>
-<!-- Bootstrap-->
-
-
 <script>
-$( "#cyb-submit" ).click(function() {
+<!-- $('body').on('touchmove', function(e) { -->
+    <!-- e.preventDefault(); -->
+<!-- }); -->
+$(window).on("orientationchange",function(){
+  if(window.orientation == 0) // Portrait
+  {
+	$('.cyb-logo').width('23vw');
+	$('.cyb-logo').height('9vh');
+	$('.cyb-main-avatar').width('42vw');
+	$('.cyb-main-avatar').height('40vh');
+	$('.cyb-regvatar').width('69vw');
+	$('.cyb-regvatar').height('33vh');
+	$('.cyb-regvatar').css("margin-bottom","10%");
+	$('.cyb-regvatar').css("margin-left","15%");
+	$('cyb-woman-avatar').width('40vw');
+	$('cyb-woman-avatar').height('46vh');
+  }
+  else // Landscape
+  {
+	$('.cyb-logo').width('9vw');
+	$('.cyb-logo').height('23vh');
+	$('.cyb-main-avatar').width('40vh');
+	$('.cyb-main-avatar').height('42vw');
+	$('.cyb-regvatar').width('33vw');
+	$('.cyb-regvatar').height('69vh');
+	$('.cyb-regvatar').css('margin-left','33%');
+	$('.cyb-regvatar').css('margin-bottom','15%');
+	$('.cyb-woman-avatar').width('30vw');
+	$('.cyb-woman-avatar').height('50vh');
+	$('.cyb-woman-avatar').css('margin-left','35%');
+	
+  }
+});
+</script>
+<script>
+$('#cyb-submit').click(function() {
+	debugger;
 	var isValid = true;
 	var emailInput=$(".cyb-user-email");
 	var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -107,7 +138,7 @@ $( "#cyb-submit" ).click(function() {
 		
 		$('.error').hide();
 		$.ajax({
-			url: "http://localhost:8080/api/candidate",
+			url: "http://ec2-54-86-101-212.compute-1.amazonaws.com:8080/api/candidate",
 			type: "POST",
 			crossDomain: true,
 			data: JSON.stringify(candidate),
@@ -142,5 +173,6 @@ function removeErrorClass(objectClass){
 	
 }
 </script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
