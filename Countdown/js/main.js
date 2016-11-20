@@ -29,8 +29,9 @@ function initializeClock(id, endtime) {
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
     if (t.total <= 0) {
+			clearInterval(timeinterval);
 			$.ajax({
-			url: "http://localhost:8080/api/candidate",
+			url: "http://54.82.120.46:8080/api/candidate",
 			type: "GET",
 			crossDomain: true,
 			contentType:"application/json",
@@ -41,7 +42,6 @@ function initializeClock(id, endtime) {
 					$('.error').show();
 				}
 				else{
-					clearInterval(timeinterval);
 					$('.cyb-winner').html('The winner is: \n'+result.message[0].first_name +' ' + result.message[0].last_name).wrap('<pre />');
 					$('.cyb-title').hide();
 					$('.cyb-winner').show();
@@ -58,12 +58,12 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-//var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-var deadline = new Date(Date.parse(new Date()) + 20* 1000);
+var deadline = new Date(Date.parse(new Date()) +1000*60*5);
+//var deadline = new Date(Date.parse(new Date()) + 20* 1000);
 initializeClock('clockdiv', deadline);
 $('.cyb-winner').click(function(){
 			$.ajax({
-			url: "http://localhost:8080/api/candidate",
+			url: "http://54.82.120.46:8080/api/candidate",
 			type: "GET",
 			crossDomain: true,
 			contentType:"application/json",

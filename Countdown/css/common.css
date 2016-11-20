@@ -15,7 +15,7 @@
 body{
   font-family: NexaBold;
   display:flex;
-  
+  overflow:hidden;
 }
 
 h1{
@@ -49,6 +49,11 @@ h1{
 	justify-content:center;
 	
 }	
+.bold{
+	font-weight:bold !important;
+	font-size:60px !important;
+	color:black;
+}
 
 .cyb-content,.cyb-winner{
 font-family: NexaBold;
@@ -62,7 +67,7 @@ transform: scaleX(1.0005);/* width and height properties ommitted due to transfo
 
 .cyb-winner{
 	display:none;
-	font-size:80px !important;
+	font-size:50px !important;
 	align-self:center;
 }
 
