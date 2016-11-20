@@ -1,0 +1,8 @@
+{
+	"development":{
+		"password":"Cyber123",
+		"username":"root",
+		"database":"angularupcandidates",
+	  	"log_path":"C:\\logs\\"
+	}
+}

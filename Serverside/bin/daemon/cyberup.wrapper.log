@@ -1,0 +1,66 @@
+2016-11-12 21:56:58 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-12 21:56:58 - Started 2848
+2016-11-12 21:58:26 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-12 21:58:26 - Started 3236
+2016-11-12 21:59:31 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-12 21:59:31 - Started 2640
+2016-11-14 10:27:46 - Stopping cyberup.exe
+2016-11-14 10:27:46 - ProcessKill 2640
+2016-11-14 10:27:46 - Finished cyberup.exe
+2016-11-14 10:45:34 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-14 10:45:34 - Started 1596
+2016-11-14 10:46:35 - Stopping cyberup.exe
+2016-11-14 10:46:35 - ProcessKill 1596
+2016-11-14 10:46:35 - Finished cyberup.exe
+2016-11-14 10:47:23 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-14 10:47:23 - Started 1664
+2016-11-14 11:48:05 - Stopping cyberup.exe
+2016-11-14 11:48:05 - ProcessKill 1664
+2016-11-14 11:48:05 - Finished cyberup.exe
+2016-11-14 11:48:51 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-14 11:48:52 - Started 1612
+2016-11-14 21:58:16 - Stopping cyberup.exe
+2016-11-14 21:58:16 - ProcessKill 1612
+2016-11-14 21:58:16 - Finished cyberup.exe
+2016-11-14 21:58:31 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-14 21:58:31 - Started 3344
+2016-11-14 22:00:28 - Stopping cyberup.exe
+2016-11-14 22:00:28 - ProcessKill 3344
+2016-11-14 22:00:28 - Finished cyberup.exe
+2016-11-14 22:00:39 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-14 22:00:39 - Started 3980
+2016-11-15 09:53:26 - Stopping cyberup.exe
+2016-11-15 09:53:26 - ProcessKill 3980
+2016-11-15 09:53:26 - Finished cyberup.exe
+2016-11-15 09:56:46 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-15 09:56:46 - Started 1508
+2016-11-15 10:06:51 - Stopping cyberup.exe
+2016-11-15 10:06:51 - ProcessKill 1508
+2016-11-15 10:06:51 - Finished cyberup.exe
+2016-11-15 10:09:34 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-15 10:09:34 - Started 1504
+2016-11-16 12:47:59 - Stopping cyberup.exe
+2016-11-16 12:47:59 - ProcessKill 1504
+2016-11-16 12:47:59 - Finished cyberup.exe
+2016-11-16 12:48:01 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-16 12:48:01 - Started 3216
+2016-11-16 20:30:16 - Stopping cyberup.exe
+2016-11-16 20:30:16 - ProcessKill 3216
+2016-11-16 20:30:16 - Finished cyberup.exe
+2016-11-16 20:30:51 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-16 20:30:51 - Started 5984
+2016-11-17 12:50:00 - Stopping cyberup.exe
+2016-11-17 12:50:00 - ProcessKill 5984
+2016-11-17 12:50:00 - Finished cyberup.exe
+2016-11-17 12:50:12 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-17 12:50:12 - Started 1356
+2016-11-17 12:52:22 - Stopping cyberup.exe
+2016-11-17 12:52:22 - ProcessKill 1356
+2016-11-17 12:52:22 - Finished cyberup.exe
+2016-11-17 12:52:25 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-17 12:52:25 - Started 4700
+2016-11-17 12:53:26 - Stopping cyberup.exe
+2016-11-17 12:53:26 - ProcessKill 4700
+2016-11-17 12:53:26 - Finished cyberup.exe
+2016-11-17 12:53:30 - Starting C:\Program Files\nodejs\node.exe --harmony "C:\Users\Administrator\Desktop\Serverside\node_modules\node-windows\lib\wrapper.js" -f "C:\Users\Administrator\Desktop\Serverside\bin\www" -l "CyberUp" -g 0.25 -w 1 -r 3 -a n
+2016-11-17 12:53:30 - Started 5816
