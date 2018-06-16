@@ -1,8 +1,10 @@
 {
 	"development":{
-		"password":"Cyber123",
+		"password":"nghhinur21",
 		"username":"root",
 		"database":"angularupcandidates",
-	  	"log_path":"C:\\logs\\"
+	  	"log_path":"C:\\logs\\",
+		"gmail_user":"cyberark.angularup2018@gmail.com",
+		"gmail_pass":"nghhinur21"
 	}
 }

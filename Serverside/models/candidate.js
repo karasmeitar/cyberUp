@@ -3,17 +3,17 @@ module.exports = function(sequelize, DataTypes) {
 		first_name: {
 			type: DataTypes.STRING,
 			allowNull: false,
-			primaryKey: false
+			primaryKey: true
 		},
 			last_name: {
 			type: DataTypes.STRING,
-			allowNull: true,
-			primaryKey: false
+			allowNull: false,
+			primaryKey: true
 		},
 		email: {
 			type: DataTypes.STRING,
-			allowNull: true,
-			primaryKey: false
+			allowNull: false,
+			primaryKey: true
 		},
 		code: {
 			type: DataTypes.STRING,

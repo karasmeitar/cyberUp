@@ -74,7 +74,7 @@ var submitClicked =function(event) {
 	}
 	
 	if(!isValid){
-		$('.cyb-error').text("*Please fill in all required fields");
+		$('.cyb-error').text("*Please fill in all  fields");
 		$('.cyb-error').show();
 	}
 	else{
