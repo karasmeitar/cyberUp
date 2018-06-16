@@ -23,20 +23,17 @@ var transporter = nodemailer.createTransport(smtpTransport({
 
 module.exports = {
     sendEmail: function(userToSend,callback) {
-        console.log(config.gmail_user);
         var mailOptions = {
             from: config.gmail_user,
             to: userToSend.email,
             subject: 'AngularUp 2018-CyberArk',
-            text: 'Hello ' + userToSend.first_name + ' ' + userToSend.last_name
+            text: 'Hello ' + userToSend.first_name + ' ' + userToSend.last_name + ' Your code is: '+ userToSend.code
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                console.log(error);
                 callback(false);
             } else {
-                console.log('Email sent: ' + info.response);
                 callback(true);
             }
         });

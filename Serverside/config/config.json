@@ -1,6 +1,6 @@
 {
 	"development":{
-		"password":"nghhinur21",
+		"password":"root",
 		"username":"root",
 		"database":"angularupcandidates",
 	  	"log_path":"C:\\logs\\",

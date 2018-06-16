@@ -31,7 +31,7 @@ function initializeClock(id, endtime) {
     if (t.total <= 0) {
 			clearInterval(timeinterval);
 			$.ajax({
-			url: "http://54.82.120.46:8080/api/candidate",
+			url: "http://localhost:8081/api/candidate",
 			type: "GET",
 			crossDomain: true,
 			contentType:"application/json",

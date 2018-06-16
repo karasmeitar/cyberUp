@@ -86,28 +86,28 @@ var submitClicked =function(event) {
 		
 		$("#cyb-loader").css('display','block');
 		$.ajax({
-			url: "http://54.82.120.46:8080/api/candidate",
+			url: "http://localhost:8081/api/candidate",
 			type: "POST",
 			crossDomain: true,
 			data: JSON.stringify(candidate),
 			contentType:"application/json",
 			dataType: "json",
 			success:function(result){
-				if(result.status==='error'){
+				if(result.status===201){
+					ga('send','event', 'submitSuccess');
+					$('#cyb-code').text(result.message);
+					$.mobile.navigate('#cyb-visit-us');
+				}
+				else{
 					$('.cyb-error').text(result.message);
 					$('.cyb-error').show();
 					addErrorClass('.cyb-user-firstname');
 					addErrorClass('.cyb-user-lastname');
 					addErrorClass('.cyb-user-email');
 				}
-				else{
-					ga('send','event', 'submitSuccess');
-					$('#cyb-code').text(result.message);
-					$.mobile.navigate('#cyb-visit-us');
-				}
-				$("#cyb-loader").css('display','none');
-				
-			},
+                $("#cyb-loader").css('display','none');
+
+            },
 			error:function(xhr,status,error){
 					$("#cyb-loader").css('display','none');
 					$('.cyb-error').text(error);
