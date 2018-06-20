@@ -86,7 +86,7 @@ var submitClicked =function(event) {
 		
 		$("#cyb-loader").css('display','block');
 		$.ajax({
-			url: "http://localhost:8081/api/candidate",
+			url: "http://cyberark.rocks/api/candidate",
 			type: "POST",
 			crossDomain: true,
 			data: JSON.stringify(candidate),

@@ -3,14 +3,20 @@
 var app = require('./../app');
 var models = require('../models');
 var logger = require('./../logger');
+var fs = require("fs");
 
+var options = {
+    key: fs.readFileSync('C://programdata//win-acme//httpsacme-v01.api.letsencrypt.org//cyberark.rocks-key.pem').toString(),
+    cert: fs.readFileSync('C://programdata//win-acme//httpsacme-v01.api.letsencrypt.org//cyberark.rocks-crt.pem').toString()
+};
 
-var server = require('http').createServer(app);
+//require('https').createServer(options, app).listen(443);
+var server = require('https').createServer(options,app);
 models.sequelize
   .authenticate()
   .then(function(err) {
       logger.info('Connection has been established successfully.');
-    server.listen(8081 || 8081, function () {
+    server.listen(443,'0.0.0.0',511, function () {
       logger.info('Express server listening on port ' + server.address().port);
 });
   })

@@ -4,7 +4,7 @@ var Service = require('node-windows').Service;
 var svc = new Service({
     name:'CyberUp',
     description: 'CyberUp  web server.',
-    script: 'C:\\Users\\Administrator\\Desktop\\Serverside\\bin\\www'
+    script: 'C:\\Users\\Administrator\\Desktop\\AngularUp\\cyberUp\\Serverside\\bin\\www'
 });
 
 // Listen for the "install" event, which indicates the

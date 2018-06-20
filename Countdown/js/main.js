@@ -31,7 +31,7 @@ function initializeClock(id, endtime) {
     if (t.total <= 0) {
 			clearInterval(timeinterval);
 			$.ajax({
-			url: "http://localhost:8081/api/candidate",
+			url: "http://cyberark.rocks/api/candidate",
 			type: "GET",
 			crossDomain: true,
 			contentType:"application/json",
@@ -63,7 +63,7 @@ var deadline = new Date(Date.parse(new Date()) +1000*60*5);
 initializeClock('clockdiv', deadline);
 $('.cyb-winner').click(function(){
 			$.ajax({
-			url: "http://54.82.120.46:8080/api/candidate",
+			url: "http://cyberark.rocks/api/candidate",
 			type: "GET",
 			crossDomain: true,
 			contentType:"application/json",
